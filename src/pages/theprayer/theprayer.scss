@@ -1,0 +1,21 @@
+page-theprayer {
+
+  ion-card-content p {
+    font-family: open-sans;
+    font-size: 12px;
+    line-height: 1.8;
+    color: map-get($colors, dark) !important;
+  }
+
+  b {
+    font-family: open-sans;
+    font-size: 14px;
+    color: map-get($colors, dark) !important;
+  }
+
+  ion-card-header {
+    font-family: open-sans;
+    background-color: burlywood;
+  }
+
+}

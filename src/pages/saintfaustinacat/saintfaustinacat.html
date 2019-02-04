@@ -1,0 +1,42 @@
+<ion-header no-border>
+    <ion-navbar color="maincolor">
+      <ion-buttons start>
+        <button ion-button icon-only menuToggle>
+            <ion-icon color="light" name="menu"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+  </ion-header>
+  
+  <ion-content fullscreen parallax-header>
+  
+      <div class="header-imagesaint"></div>
+  
+    <div class="main-content">
+
+      <div class="grid">
+            <ion-grid>
+            <ion-row (click)="overview()">
+              <ion-col>
+                <p> Overview </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      
+          </div>
+
+          <hr>
+
+          <div class="grid">
+              <ion-grid>
+              <ion-row (click)="bio()">
+                <ion-col padding>
+                  <p> Biography </p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+        
+            </div>
+            
+    </div>
+</ion-content>

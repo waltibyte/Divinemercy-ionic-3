@@ -1,0 +1,193 @@
+<ion-header no-border>
+  <ion-navbar color="maincolor">
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+          <ion-icon color="light" name="menu"></ion-icon>
+      </button>
+  </ion-buttons>
+</ion-navbar>
+</ion-header>
+
+<ion-content fullscreen parallax-header>
+
+    <div [ngSwitch]="stream">
+        <div *ngSwitchCase="'mercy'">
+         <div class="header-image"></div>
+        </div>
+        <div *ngSwitchCase="'history'">
+            <div class="header-imagesec"></div>
+           </div>
+    </div>
+
+  <div class="main-content">
+
+    <ion-segment [(ngModel)]="stream" color="chocolate">
+      <ion-segment-button value="mercy">Mercy prayer</ion-segment-button>
+      <ion-segment-button value="history">More</ion-segment-button>
+    </ion-segment>
+
+  <hr>
+
+ <div [ngSwitch]="stream">
+ <div *ngSwitchCase="'mercy'">
+  <div class="grid">
+      <ion-grid>
+      <ion-row (click)="thePrayer()">
+        <ion-col col-4>
+          <img src="assets/mercy/prayermenu.jpg">
+        </ion-col>
+        <ion-col col-8>
+          <p> The Prayer </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    </div>
+
+    <hr>
+
+    <div class="grid">
+
+        <ion-grid>
+          <ion-row (click)="mercyDefinition()">
+            <ion-col col-4>
+              <img src="assets/mercy/divinemercydef.jpg">
+            </ion-col>
+            <ion-col col-8>
+              <p> What is Divine Mercy? </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        </div>
+
+        <hr>
+
+
+    <div class="grid">
+    <ion-grid>
+        <ion-row (click)="formsOfDevo()">
+          <ion-col col-4>
+            <img src="assets/mercy/devotion1.jpg">
+          </ion-col>
+          <ion-col col-8>
+            <p> Forms of Devotion </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      </div>
+
+    </div>
+
+    <div *ngSwitchCase="'history'">
+        <div class="grid">
+            <ion-grid>
+                <ion-row (click)="history()">
+                  <ion-col col-4>
+                    <img src="assets/mercy/history.jpg">
+                  </ion-col>
+                  <ion-col col-8>
+                    <p> History </p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+              </div>
+              <hr>
+
+              <div class="grid">
+        <ion-grid>
+            <ion-row (click)="mercyinScripture()">
+              <ion-col col-4>
+                <img src="assets/mercy/scripture.jpg">
+              </ion-col>
+              <ion-col col-8>
+                <p> Scripture </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          </div>
+          <hr>
+
+          <div class="grid">
+              <ion-grid>
+                  <ion-row (click)="tradition()">
+                    <ion-col col-4>
+                      <img src="assets/mercy/tradition.jpg">
+                    </ion-col>
+                    <ion-col col-8>
+                      <p> Tradition </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+
+                </div>
+                <hr>
+        <div class="grid">
+        <ion-grid>
+            <ion-row (click)="spirituality()">
+              <ion-col col-4>
+                <img src="assets/mercy/spirituality.jpg">
+              </ion-col>
+              <ion-col col-8>
+                <p> Spirituality </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          </div>
+          <hr>
+        <div class="grid">
+
+        <ion-grid>
+          <ion-row (click)="saintFaustina()">
+            <ion-col col-4>
+              <img src="assets/mercy/stfraustina.jpg">
+            </ion-col>
+            <ion-col col-8>
+              <p> Saint Faustina </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        </div>
+        <hr>
+
+        <div class="grid">
+            <ion-grid>
+                <ion-row (click)="marians()">
+                  <ion-col col-4>
+                    <img src="assets/mercy/themarians.jpg">
+                  </ion-col>
+                  <ion-col col-8>
+                    <p> The Marians </p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+              </div>
+              <hr>
+
+              <div class="grid">
+                  <ion-grid>
+                      <ion-row (click)="thepop()">
+                        <ion-col col-4>
+                          <img src="assets/mercy/pop.jpg">
+                        </ion-col>
+                        <ion-col col-8>
+                          <p> Pope John Paul II </p>
+                        </ion-col>
+                      </ion-row>
+                    </ion-grid>
+
+                    </div>
+                    <hr>
+
+        </div>
+
+  </div>
+</div>
+
+</ion-content>

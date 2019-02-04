@@ -1,0 +1,41 @@
+<ion-header no-border>
+    <ion-navbar color="maincolor">
+      <ion-title>Recitation</ion-title>
+      <ion-buttons start>
+        <button ion-button icon-only menuToggle>
+            <ion-icon color="light" name="menu"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+  </ion-header>
+
+
+<ion-content style="background-color: moccasin">
+
+  <div class="calendar-header" padding>
+      <ion-row class="calendar-month">
+        <ion-col color="white" text-center>Jesus, i trust in you</ion-col>
+      </ion-row>
+    </div>
+    <div class="calendar-body">
+      <ion-grid>
+        <ion-row class="calendar-weekday">
+          <ion-col>Su</ion-col>
+          <ion-col>Mo</ion-col>
+          <ion-col>Tu</ion-col>
+          <ion-col>We</ion-col>
+          <ion-col>Th</ion-col>
+          <ion-col>Fr</ion-col>
+          <ion-col>Sa</ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <h4 padding style="color: darkred;">Daily Meditation</h4>
+    <ion-card text-center>
+      <ion-card-content>
+      <p>{{ daily }}</p>
+    </ion-card-content>
+    </ion-card>
+
+</ion-content>

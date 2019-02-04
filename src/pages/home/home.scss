@@ -1,0 +1,56 @@
+page-home {
+
+  .header-image {
+    background-image: url('../assets/mercy/shbg6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      height: 50vh;
+}
+.header-imagesec {
+  background-image: url('../assets/mercy/divmercy2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.main-content {
+    padding: 20px;
+    background-color: white;
+}
+
+.scroll-content {
+    padding-top: 0 !important;
+}
+
+ion-header {
+    -webkit-backdrop-filter: blur(8px);
+}
+
+ion-navbar {
+    opacity: 0.4;
+    box-shadow: 0px 1px 13px 1px rgba(0, 0, 0, 0.77);
+}
+
+ion-col img {
+    border-radius: 8px;
+}
+
+p {
+  font-weight: 400;
+  color: map-get($colors, dark) !important;
+}
+
+
+.grid {
+    background-color: navajowhite;
+    border-radius: 10px;
+    padding: 0;
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+
+.iconcolor {
+  color: darkred;
+}
+}

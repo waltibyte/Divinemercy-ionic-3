@@ -1,0 +1,62 @@
+page-daily {
+  ion-card-content p {
+    font-family: open-sans;
+    font-size: 12px;
+    line-height: 1.8;
+    color: map-get($colors, dark) !important;
+  }
+
+  b {
+    font-family: open-sans;
+    font-size: 14px;
+    color: map-get($colors, dark) !important;
+  }
+
+  ion-card-header {
+    font-family: open-sans;
+    background-color: burlywood;
+  }
+
+  [col-1] {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 8.33333%;
+    -ms-flex: 0 0 8.33333%;
+    flex: 0 0 14.285714285714286%;
+    width: 14.285714285714286%;
+    max-width: 14.285714285714286%;
+  }
+  .col {
+    text-align: center;
+    padding: 5px;
+    font-family: open-sans;
+    font-size: 14px;
+    color: map-get($colors, dark) !important;
+  }
+
+  .calendar-header {
+    background-color: darkred;
+    color: #FFFFFF;
+  }
+  .calendar-body {
+    .grid {
+      padding: 0;
+    }
+    .col:last-child {
+      border-right: none;
+    }
+    .calendar-weekday, .calendar-date {
+      text-align: center;
+      margin: 0;
+    }
+    .calendar-weekday {
+      font-weight: bold;
+      border-bottom: solid 1px brown;
+      background-color: chocolate;
+    }
+    .calendar-date {
+      border-top: solid 1px brown;
+      border-bottom: solid 1px brown;
+    }
+  }
+
+}
