@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "288669256757",
+    "firebase_url": "https://divine-mercy-f15d1.firebaseio.com",
+    "project_id": "divine-mercy-f15d1",
+    "storage_bucket": "divine-mercy-f15d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288669256757:android:6622c3f0c9454efc",
+        "android_client_info": {
+          "package_name": "com.divinemercyorg.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288669256757-vu5e8eauk4endk93pa5f5o9vdlindraa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH2FJ5BpK4AvChCKo6701i2L0Vw6ZemN8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

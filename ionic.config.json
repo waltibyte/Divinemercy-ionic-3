@@ -1,0 +1,7 @@
+{
+  "name": "DivMercy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
