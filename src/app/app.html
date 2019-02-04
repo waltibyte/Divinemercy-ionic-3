@@ -1,0 +1,62 @@
+<ion-menu [content]="content">
+
+  <ion-content padding>
+    <ion-grid no-padding style="margin-top:4vh">
+      <ion-row align-items-end>
+          <ion-col col-auto>
+            <img style="width:50%" src="assets/mercy/crosslogo3.png">
+          </ion-col>
+
+          <ion-col col-auto style="margin-left:-8vw">
+            <h5>Catholic</h5>
+            <p style="font-family:open-sans; font-size:16px; color:#758692; margin-top:-1.5vh">Companion</p>
+          </ion-col>
+      </ion-row>
+
+      <ion-row padding align-items-center menuClose style="margin-top:4vh" (click)="homePage()">
+        <ion-col col-auto>
+            <ion-icon class="menuicon" name="home"></ion-icon>
+        </ion-col>
+
+        <ion-col col-auto style="margin-left:4vw">
+        <p style="font-family:open-sans; font-size:16px; letter-spacing:0.5px; color: darkred; margin-top:1.5vh">Home</p>
+        </ion-col>
+    </ion-row>
+    <ion-row padding align-items-center menuClose style="margin-top:-4vh" (click)="recitation()">
+      <ion-col col-auto>
+          <ion-icon class="menuicon" name="book"></ion-icon>
+      </ion-col>
+
+      <ion-col col-auto style="margin-left:4vw">
+      <p style="font-family:open-sans; font-size:16px; letter-spacing:0.5px; color: darkred; margin-top:1.5vh">Daily Recitation</p>
+      </ion-col>
+  </ion-row>
+
+  <ion-row padding align-items-center menuClose style="margin-top:-4vh" (click)="openRate()">
+      <ion-col col-auto>
+          <ion-icon class="menuicon" name="star"></ion-icon>
+      </ion-col>
+
+      <ion-col col-auto style="margin-left:4vw">
+      <p style="font-family:open-sans; font-size:16px; letter-spacing:0.5px; color: darkred; margin-top:1.5vh">Rate us</p>
+      </ion-col>
+  </ion-row>
+
+
+  <ion-row padding align-items-center menuClose style="margin-top:-4vh" (click)="aboutPage()">
+      <ion-col col-auto>
+          <ion-icon class="menuicon" name="information-circle"></ion-icon>
+      </ion-col>
+
+      <ion-col col-auto style="margin-left:4vw">
+      <p style="font-family:open-sans; font-size:16px; letter-spacing:0.5px; color: darkred; margin-top:1.5vh">About</p>
+      </ion-col>
+  </ion-row>
+
+  </ion-grid>
+</ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
